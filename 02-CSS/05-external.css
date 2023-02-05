@@ -1,0 +1,14 @@
+p{
+    color: red;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+​
+h1{
+    text-align: center;
+    color: blue;
+}
+​
+a{
+    text-decoration: none; /* linklerin altindaki cizgiyi yok ettik */
+}

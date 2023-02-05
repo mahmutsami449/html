@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- -----------------------CSS -->
+    <style>
+        .pink{
+            background-color: pink;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+    </style>
+
+</head>
+<body>
+   <!-- -------------------------HTML --> 
+   <h1 id="baslik" class="name blue red">Merhaba</h1>
+
+   <!-- ------------------------JS -->
+   <script>
+
+    let stiller = document.querySelector("#baslik").classList; //h1'in classList'ini alip,stiller degiskenine yukledik
+    //console.log(stiller); //name blue red
+    stiller.add("pink"); //h1'e pink adinda yeni bir class ekledik
+
+    document.querySelector("#baslik").classList.add("yellow"); //hic degisken olusturmadan yellow class'ini ekledik
+    //yeloow class'i sonradan add yapildigi icin pink class'ini ezdi
+
+    document.querySelector("#baslik").classList.remove("yellow");
+    //yellow class'i kalkinca pink class'i tekrar aktif oldu
+
+   </script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+    
+    <script>
+        //var keyword'u ile degiskenler tekrar tanimlanabilir ve degerleri guncellenebilir.
+
+        var x = 5;
+        var x = 6;
+        console.log(x);
+
+        //veya su sekilde kullanabiliriz
+
+        var x = 4;
+        x = 8;
+        console.log(x);
+
+        //let ile tanimlanan bir degiskeni tekrar tanimlayamayiz ancak degerini guncelleyebiliriz
+
+        let y = 5;
+        //let y = 7; hata: y iki defa tanimlanamaz
+        y = 6;
+        console.log('y nin degeri: ' + y);
+        
+        var x = 5;
+        var k; //undefined yazar cunku ilk degeri yok
+        const z = 4; //const'a ilkdegeri yazmazsak kizar
+        console.log(x,k,z); //arlarina virgul koyarak yazdirabilirsiniz
+
+    </script>
+</body>
+</html>

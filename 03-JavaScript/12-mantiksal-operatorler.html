@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+        let x = 50;
+        let y = 40;
+        let z = 10;
+
+        // ==, != operatorleri sadece veriyi kontrol eder
+        // ===, !== operatorleri hem veriyi hemde veri tipini kontrol eder
+
+        console.log(x==50); //true
+        console.log(x==45); //false
+        console.log(x===50); //true
+        console.log(x=='50'); //true cunku, == veri tipi kontrolu yapmaz, sadece veriye bakar
+        console.log(x==="50"); //false verir cunku x'den Number gelir, karsisinda String vardir
+        console.log(x===50n); //false verir. x number, 50n bigInt'tir
+        console.log(x>y); //true
+        console.log(x>"30"); //true cunku buyuk-kucuk veri tipi kontrolu yapmaz
+        console.log(x>"130"); //false
+        console.log(x>"adsd"); //false, hata vermez ama karsilastiramaz
+
+        let s2 = 'kus';
+        let s3 = 'kedi';
+
+        console.log(s2 || s3); // kus
+        console.log(s2 && s3); //kedi. false'u aradi bulamayinca en sondakini aldi.
+        console.log("" || 0 || "asd" || undefined); //"asd" bir degerdir.Vaya 1'i arar ve "asd" yi bulur
+        console.log(12 && 0 && "asd" && undefined); //0 verir. AND, ilk buldugu false'u verir
+
+    </script>
+</body>
+</html>

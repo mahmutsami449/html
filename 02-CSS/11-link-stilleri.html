@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .menu{
+            background-color: bisque;
+            text-align: center;
+           /* color: red;  calismaz.a tag;leri etkilenmez*/
+        }
+        .menu a{  /*class ismi menu olanin icindeki a lar*/
+            color: red;
+        }
+        a.elma{ /*class ismi elma olan a*/
+            color: blue;
+        }
+
+        .menu a:hover{ /* class ismi menu olanin icindeki a taglarinin uzerine gelindiginde */
+            background-color: turquoise;     
+        }
+
+        .menu a:active{ /* linke tiklandigin anda link yesile doner */
+            color: green;
+        }
+
+        .menu a:link{ /* google'i ziyaret ettikten sonra linkin rengi degisir */
+            color: cornflowerblue;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+
+    <div class="menu">
+        <a class="elma" href="">Home</a>
+        <a href="">About</a>
+        <a href="">Projects</a>
+        <a href="https://google.com">Contact</a>
+    </div>
+
+</body>
+</html>

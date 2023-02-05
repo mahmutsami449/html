@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        const para = "100";
+        console.log(typeof(para)); //string verir
+        console.log(para + 15); //concatinate yapar. 10015 verir
+        console.log(Number(para) + 15); // String ifadeyi number kullanarak sayiya cevirdik. 115 verir
+
+        console.log(Number('abc')); //NaN - Not a Number - Sayi degil. Hata degil,uyaridir
+
+        let puan; //undefined
+        console.log(puan); //undefined verir
+
+        let maas = 123;
+        let d1 = Boolean(maas);
+        console.log(d1); //true
+
+        console.log(Boolean(maas));
+
+        console.log(Boolean('ali')); //true verir
+
+        console.log(Boolean('')); //false verir. tirnagin icinde space'e bassak true verir
+
+        console.log(Boolean(0)); //false verir
+
+        console.log(Boolean(Number('asdf'))); //Number('asdf') kismi sayiya donusturulemeyecegi icin NaN uretilir. NaN ise false dur
+
+        console.log(Boolean(null)); //false verir
+
+        console.log(Boolean(puan)); //false verir
+
+        console.log(Boolean(undefined)); //false verir
+
+        const sifir = 0, nal = null; //aralarina virgul koyarak variable'lari tanimlayabiliriz
+    </script>
+</body>
+</html>

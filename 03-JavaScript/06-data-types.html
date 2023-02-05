@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+        let enBuyukTamsayi = Number.MAX_SAFE_INTEGER;
+        console.log(enBuyukTamsayi); //9007199254740991
+
+        console.log(enBuyukTamsayi+5==enBuyukTamsayi+6); //hatali olarak true verir
+        //bu durumu duzeltmek icin bigInt kullanilir
+
+
+        var testTamsayi = 1827374857584674784747585n;
+        console.log(testTamsayi);
+        console.log(testTamsayi+5n==testTamsayi+6n); //false verir, hata duzeltilmis olur
+
+        let k; //declaration= Deger atmadan sadece degisken olusturma islemidir
+        console.log(k); //undefined (tanimsiz)
+
+        let x = 5; //Initialization =Degiskene deger atama islemine denir.
+        console.log(typeof(x)); //type of ile data tipini ogreniriz
+        
+    </script>
+     
+</body>
+</html>
